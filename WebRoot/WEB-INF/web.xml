@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <filter>
+  <filter-name>ending</filter-name>
+  <filter-class>com.amaker.util.EncodingFilter</filter-class>
+ </filter>
+ <filter-mapping>
+  <filter-name>ending</filter-name>
+  <url-pattern>/*</url-pattern>
+ </filter-mapping>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>LoginServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.LoginServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>RegisterSrvlet</servlet-name>
+  <servlet-class>com.amaker.servlet.RegisterSrvlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>RegisterServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.RegisterServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>AddOrderServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.AddOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>ListOrderServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.ListOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>DeleteOrderServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.DeleteOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UpdateServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.UpdateServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UserModifyPasswordServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.UserModifyPasswordServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>UserBaseModifyServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.UserBaseModifyServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>CheckOrderVersionServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.CheckOrderVersionServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>MakeOrderServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.MakeOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>QueryOrderServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.QueryOrderServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <servlet-name>UpdateOrderServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.UpdateServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>OrderLogUpdateServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.OrderLogUpdateServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <description>This is the description of my J2EE component</description>
+  <display-name>This is the display name of my J2EE component</display-name>
+  <servlet-name>OrderLogListServlet</servlet-name>
+  <servlet-class>com.amaker.servlet.OrderLogListServlet</servlet-class>
+ </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateVideoServlet</servlet-name>
+    <servlet-class>com.amaker.servlet.UpdateVideoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClientUpdateOrderServlet</servlet-name>
+    <servlet-class>com.amaker.servlet.ClientUpdateOrderServlet</servlet-class>
+  </servlet>
+
+
+ <servlet-mapping>
+  <servlet-name>LoginServlet</servlet-name>
+  <url-pattern>/servlet/LoginServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>RegisterSrvlet</servlet-name>
+  <url-pattern>/servlet/RegisterSrvlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>RegisterServlet</servlet-name>
+  <url-pattern>/servlet/RegisterServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>AddOrderServlet</servlet-name>
+  <url-pattern>/servlet/AddOrderServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>ListOrderServlet</servlet-name>
+  <url-pattern>/servlet/ListOrderServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>DeleteOrderServlet</servlet-name>
+  <url-pattern>/servlet/DeleteOrderServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UpdateServlet</servlet-name>
+  <url-pattern>/servlet/UpdateServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UserModifyPasswordServlet</servlet-name>
+  <url-pattern>/servlet/UserModifyPasswordServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>UserBaseModifyServlet</servlet-name>
+  <url-pattern>/servlet/UserBaseModifyServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>CheckOrderVersionServlet</servlet-name>
+  <url-pattern>/servlet/CheckOrderVersionServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>MakeOrderServlet</servlet-name>
+  <url-pattern>/servlet/MakeOrderServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>QueryOrderServlet</servlet-name>
+  <url-pattern>/servlet/QueryOrderServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>OrderLogUpdateServlet</servlet-name>
+  <url-pattern>/servlet/OrderLogUpdateServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>OrderLogListServlet</servlet-name>
+  <url-pattern>/servlet/OrderLogListServlet</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateVideoServlet</servlet-name>
+    <url-pattern>/servlet/UpdateVideoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClientUpdateOrderServlet</servlet-name>
+    <url-pattern>/servlet/ClientUpdateOrderServlet</url-pattern>
+  </servlet-mapping>
+ <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+ </welcome-file-list>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
